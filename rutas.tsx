@@ -25,73 +25,38 @@ export default function IndexScreen() {
   const stops = [
     {
       id: 1,
-      name: 'Universidad de Cundinamarca',
-      coord: { latitude: 4.3340689, longitude: -74.3694715 },
-    },
-    {
-      id: 2,
-      name: 'Barrio El Tejar',
-      coord: { latitude: 4.3403456, longitude: -74.3589222 },
-    },
-    {
-      id: 3,
-      name: 'Barrio Fusacatán',
-      coord: { latitude: 4.327645, longitude: -74.3655325 },
-    },
-    {
-      id: 4,
-      name: 'Puente del Aguila',
-      coord: { latitude: 4.33917001413423, longitude: -74.36374491390329 },
-    },
-    {
-      id: 5,
       name: 'Hospital',
       coord: { latitude: 4.333187, longitude: -74.370590},
     },
     {
-      id: 6,
+      id: 2,
       name: 'Terminal',
       coord: { latitude: 4.346124, longitude: -74.377642},
     },
+     {
+      id: 3,
+      name: 'Paradero Filipo',
+      coord: { latitude: 4.341769, longitude: -74.363201},
+    },
+    {
+      id: 4,
+      name: 'La Pampa',
+      coord: { latitude: 4.326675, longitude: -74.408902},
+    },
+    {
+      id: 5,
+      name: 'Paradero comuneros',
+      coord: {latitude: 4.326452, longitude: -74.359946},
+    }
+  
   ];
 
   // 🚍 RUTAS
   const routes = [
-    {
-      id: 1,
-      name: 'Ruta 1 - Universidad ↔ El Tejar',
-      color: 'blue',
-      coordinates: [
-        { latitude: 4.3340689, longitude: -74.3694715 },
-        { latitude: 4.3370, longitude: -74.3650 },
-        { latitude: 4.3390, longitude: -74.3620 },
-        { latitude: 4.3403456, longitude: -74.3589222 },
-      ],
-    },
-    {
-      id: 2,
-      name: 'Ruta 2 - Universidad ↔ Fusacatán',
-      color: 'green',
-      coordinates: [
-        { latitude: 4.3340689, longitude: -74.3694715 },
-        { latitude: 4.3300, longitude: -74.3670 },
-        { latitude: 4.327645, longitude: -74.3655325 },
-      ],
-    },
-    {
-      id: 3,
-      name: 'Ruta 3 - Puente del Aguila ↔ Universidad',
-      color: 'pink',
-      coordinates: [
-        { latitude: 4.33917001413423, longitude: -74.36374491390329 },
-        { latitude: 4.336292949703569, longitude: -74.36612825022752 },
-        { latitude: 4.3340689, longitude: -74.3694715 },
-      ],
-    },
      {
-      id: 4,
-      name: 'Ruta 4 - Terminal ↔ Hospital',
-      color: 'blue',
+      id: 1,
+      name: 'Ruta 1 - Terminal ↔ Hospital',
+      color: 'Green',
       coordinates: [
         { latitude: 4.346124, longitude: -74.377642  },
         { latitude: 4.343499,  longitude: -74.376042 },
@@ -103,8 +68,75 @@ export default function IndexScreen() {
         { latitude: 4.340399, longitude: -74.363153 },
         { latitude:4.339952,  longitude: -74.362770 },
         { latitude:4.339952, longitude: -74.362770 },
+        { latitude: 4.339072,  longitude: -74.363870 },
         { latitude:4.336539, longitude: -74.365758 },
         { latitude: 4.333187, longitude: -74.370590 },
+
+      ],
+    },
+    {
+      id: 2,
+      name: 'Ruta 2 - Terminal ↔  La Pampa ',
+      color: 'purple',
+      coordinates: [
+        { latitude: 4.326675, longitude: -74.408902 },
+        { latitude: 4.326763, longitude: -74.395388 },
+        { latitude: 4.330147, longitude: -74.380159 },
+        { latitude: 4.330066, longitude: -74.379405 },
+        { latitude:4.331435, longitude: -74.377736},
+        { latitude:4.331610, longitude: -74.377089},
+        { latitude:4.332347, longitude: -74.377267},
+        { latitude:4.341900, longitude: -74.375851},
+        { latitude:4.342880, longitude: -74.376051},
+        { latitude:4.343545, longitude: -74.375967},
+        { latitude:4.343777, longitude: -74.376451},
+        { latitude:4.343511, longitude: -74.376867},
+        { latitude:4.343616, longitude: -74.377910},
+        { latitude:4.345209, longitude: -74.377401},
+        { latitude:4.345209, longitude: -74.377401},
+        { latitude:4.345917, longitude: -74.377643},
+
+      ],
+    },
+    {
+      id: 3,
+      name: 'Ruta 3 - Filipo ↔ Comuneros',
+      color: 'blue',
+      coordinates: [
+        { latitude: 4.341769, longitude: -74.363201  },
+        { latitude: 4.341053,  longitude: -74.363182  },
+        { latitude: 4.340394,  longitude: -74.363095 },
+        { latitude:4.339896, longitude: -74.362743},
+        { latitude: 4.340144, longitude: -74.362210},
+        { latitude: 4.340397, longitude: -74.361592},
+        { latitude: 4.339841, longitude: -74.361460},
+        { latitude: 4.339464, longitude:-74.361462},
+        { latitude: 4.338934, longitude: -74.361539},
+        { latitude: 4.336478, longitude: -74.361824},
+        { latitude:4.336041, longitude: -74.361977},
+        { latitude:4.335677,  longitude: -74.362482 },
+        { latitude:4.333794,  longitude: -74.363583 },
+        { latitude:4.332253,  longitude: -74.364711 },
+        { latitude:4.331613, longitude:-74.364734},
+        { latitude:4.330748,  longitude:-74.364272 },
+        { latitude: 4.329985, longitude:-74.364036 },
+        { latitude: 4.329726,  longitude: -74.363788},
+        { latitude: 4.329494,  longitude: -74.363267 },
+        { latitude:4.328560, longitude: -74.363039},
+        { latitude:4.326692,  longitude: -74.363202 },
+        { latitude:4.324985,  longitude: -74.363465},
+        { latitude: 4.324856,  longitude:-74.363480 },
+        { latitude: 4.324309,  longitude: -74.362727 },
+        { latitude:4.323944,  longitude: -74.362187},
+        { latitude:4.323982, longitude: -74.361912},
+        { latitude:4.324977, longitude: -74.361308},
+        { latitude:4.325171, longitude: -74.361243},
+        { latitude:4.326026, longitude: -74.360361},
+        { latitude:4.326229, longitude: -74.360040},
+        { latitude:4.326452, longitude: -74.359946},
+
+
+
 
       ],
     },
